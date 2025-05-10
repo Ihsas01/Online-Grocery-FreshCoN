@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>FreshCoN</display-name>
+	<welcome-file-list>
+		<welcome-file>FreshCo</welcome-file>
+	</welcome-file-list>
+
+	<!-- View Data Servlet Mappings Start -->
+	<!-- Index Data -->
+	<servlet>
+		<servlet-name>indexData</servlet-name>
+		<servlet-class>freshco.Control.indexData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>indexData</servlet-name>
+		<url-pattern>/FreshCo</url-pattern>
+	</servlet-mapping>
+
+	<!-- Admin dash -->
+	<servlet>
+		<servlet-name>ViewAdmin</servlet-name>
+		<servlet-class>freshco.Control.ViewAdmin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewAdmin</servlet-name>
+		<url-pattern>/Admin</url-pattern>
+	</servlet-mapping>
+
+	<!-- Category dash -->
+	<servlet>
+		<servlet-name>ViewCategory</servlet-name>
+		<servlet-class>freshco.Control.ViewCategory</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewCategory</servlet-name>
+		<url-pattern>/Category</url-pattern>
+	</servlet-mapping>
+
+	<!-- Customer dash -->
+	<servlet>
+		<servlet-name>ViewCustomer</servlet-name>
+		<servlet-class>freshco.Control.ViewCustomer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewCustomer</servlet-name>
+		<url-pattern>/Customer</url-pattern>
+	</servlet-mapping>
+
+	<!--Employee dash -->
+	<servlet>
+		<servlet-name>ViewEmployee</servlet-name>
+		<servlet-class>freshco.Control.ViewEmployee</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewEmployee</servlet-name>
+		<url-pattern>/Employee</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Enquiry dash -->
+	<servlet>
+		<servlet-name>ViewEnquiry</servlet-name>
+		<servlet-class>freshco.Control.ViewEnquiry</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewEnquiry</servlet-name>
+		<url-pattern>/Enquiry</url-pattern>
+	</servlet-mapping>
+
+	<!-- Feedback dash -->
+	<servlet>
+		<servlet-name>ViewFeedback</servlet-name>
+		<servlet-class>freshco.Control.ViewFeedback</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewFeedback</servlet-name>
+		<url-pattern>/Feedback</url-pattern>
+	</servlet-mapping>
+
+	<!--Payment dash -->
+	<servlet>
+		<servlet-name>ViewPayment</servlet-name>
+		<servlet-class>freshco.Control.ViewPayment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewPayment</servlet-name>
+		<url-pattern>/Payment</url-pattern>
+	</servlet-mapping>
+
+	<!--Product dash -->
+	<servlet>
+		<servlet-name>ViewProduct</servlet-name>
+		<servlet-class>freshco.Control.ViewProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewProduct</servlet-name>
+		<url-pattern>/Product</url-pattern>
+	</servlet-mapping>
+
+	<!--Sale dash -->
+	<servlet>
+		<servlet-name>ViewSale</servlet-name>
+		<servlet-class>freshco.Control.ViewSale</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewSale</servlet-name>
+		<url-pattern>/Sale</url-pattern>
+	</servlet-mapping>
+
+	<!--Shop -->
+	<servlet>
+		<servlet-name>Shop</servlet-name>
+		<servlet-class>freshco.Control.Shop</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Shop</servlet-name>
+		<url-pattern>/Shop</url-pattern>
+	</servlet-mapping>
+
+	<!-- View Data Servlet Mappings Ending -->
+
+	<!-- Validation Servlet Mapping Start -->
+	<servlet>
+		<servlet-name>UserValidation</servlet-name>
+		<servlet-class>freshco.Control.UserValidation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserValidation</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<!-- Validation Servlet Mapping End -->
+
+	<!-- Logout Servlet Mapping Start -->
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>freshco.Control.logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<!-- Logout Servlet Mapping End -->
+
+	<!-- Insert Image Servlet Mapping Start -->
+	<servlet>
+		<servlet-name>ImageUploadServlet</servlet-name>
+		<servlet-class>freshco.Control.ImageUploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ImageUploadServlet</servlet-name>
+		<url-pattern>/UploadImage</url-pattern>
+	</servlet-mapping>
+
+	<!-- Insert Data Servlet Mappings Start -->
+	<!-- Insert Delivery Person -->
+	<servlet>
+		<servlet-name>AddDeliveryPerson</servlet-name>
+		<servlet-class>freshco.Control.AddDeliveryPerson</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddDeliveryPerson</servlet-name>
+		<url-pattern>/AddDelPerson</url-pattern>
+	</servlet-mapping>
+
+	<!-- Insert Employee and Manager Person -->
+	<servlet>
+		<servlet-name>AddEmpMan</servlet-name>
+		<servlet-class>freshco.Control.AddEmpMan</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddEmpMan</servlet-name>
+		<url-pattern>/AEM</url-pattern>
+	</servlet-mapping>
+
+	<!-- Insert Enquiry -->
+	<servlet>
+		<servlet-name>AddEnquiry</servlet-name>
+		<servlet-class>freshco.Control.AddEnquiry</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddEnquiry</servlet-name>
+		<url-pattern>/EnquiryForm</url-pattern>
+	</servlet-mapping>
+
+	<!-- Insert Customer -->
+	<servlet>
+		<servlet-name>AddCustomer</servlet-name>
+		<servlet-class>freshco.Control.AddCustomer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCustomer</servlet-name>
+		<url-pattern>/RegisterCustomer</url-pattern>
+	</servlet-mapping>
+
+	<!-- Insert Category -->
+	<servlet>
+		<servlet-name>AddCategory</servlet-name>
+		<servlet-class>freshco.Control.AddCategory</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCategory</servlet-name>
+		<url-pattern>/AddCategories</url-pattern>
+	</servlet-mapping>
+
+	<!-- Insert Product -->
+	<servlet>
+		<servlet-name>AddProduct</servlet-name>
+		<servlet-class>freshco.Control.AddProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddProduct</servlet-name>
+		<url-pattern>/AddProducts</url-pattern>
+	</servlet-mapping>
+
+	<!-- Retrieving Categories for Product Form -->
+	<servlet>
+		<servlet-name>ProductCategoryList</servlet-name>
+		<servlet-class>freshco.Control.ProductCategoryList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductCategoryList</servlet-name>
+		<url-pattern>/ProductForm</url-pattern>
+	</servlet-mapping>
+
+	<!-- Insert Admin -->
+	<servlet>
+		<servlet-name>AddAdmin</servlet-name>
+		<servlet-class>freshco.Control.AddAdmin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddAdmin</servlet-name>
+		<url-pattern>/AddAdm</url-pattern>
+	</servlet-mapping>
+
+	<!-- Insert Feedback -->
+	<servlet>
+		<servlet-name>AddFeedback</servlet-name>
+		<servlet-class>freshco.Control.AddFeedback</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddFeedback</servlet-name>
+		<url-pattern>/Feedbackform</url-pattern>
+	</servlet-mapping>
+
+	<!-- Insert Data Servlet Mappings End -->
+
+
+	<!-- Delete Data Servlet Mappings Start -->
+	<!-- Delete Categories -->
+	<servlet>
+		<servlet-name>DeleteCategory</servlet-name>
+		<servlet-class>freshco.Control.DeleteCategory</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteCategory</servlet-name>
+		<url-pattern>/DeleteCategories</url-pattern>
+	</servlet-mapping>
+
+	<!-- Delete Employee -->
+	<servlet>
+		<servlet-name>DeleteEmployee</servlet-name>
+		<servlet-class>freshco.Control.DeleteEmployee</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteEmployee</servlet-name>
+		<url-pattern>/DeleteProfileE</url-pattern>
+	</servlet-mapping>
+
+	<!-- Delete Manager -->
+	<servlet>
+		<servlet-name>DeleteManager</servlet-name>
+		<servlet-class>freshco.Control.DeleteManager</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteManager</servlet-name>
+		<url-pattern>/DeleteProfileM</url-pattern>
+	</servlet-mapping>
+
+	<!-- Delete DeliveryPerson -->
+	<servlet>
+		<servlet-name>DeleteDeliveryPerson</servlet-name>
+		<servlet-class>freshco.Control.DeleteDeliveryPerson</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteDeliveryPerson</servlet-name>
+		<url-pattern>/DeleteProfileDP</url-pattern>
+	</servlet-mapping>
+
+	<!-- Delete Customer -->
+	<servlet>
+		<servlet-name>DeleteCustomer</servlet-name>
+		<servlet-class>freshco.Control.DeleteCustomer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteCustomer</servlet-name>
+		<url-pattern>/DeleteProfileC</url-pattern>
+	</servlet-mapping>
+
+	<!-- Delete Admin -->
+	<servlet>
+		<servlet-name>DeleteAdmin</servlet-name>
+		<servlet-class>freshco.Control.DeleteAdmin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteAdmin</servlet-name>
+		<url-pattern>/DeleteProfileA</url-pattern>
+	</servlet-mapping>
+	<!-- Delete Product -->
+	<servlet>
+		<servlet-name>DeleteProduct</servlet-name>
+		<servlet-class>freshco.Control.DeleteProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteProduct</servlet-name>
+		<url-pattern>/DeletePro</url-pattern>
+	</servlet-mapping>
+	<!-- Delete Data Servlet Mappings End -->
+
+
+	<!-- Update Data Servlet Mappings Start -->
+	<!-- Update Admin -->
+	<servlet>
+		<servlet-name>UpdateAdmin</servlet-name>
+		<servlet-class>freshco.Control.UpdateAdmin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateAdmin</servlet-name>
+		<url-pattern>/EditProfileA</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditProData</servlet-name>
+		<servlet-class>freshco.Control.EditProData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditProData</servlet-name>
+		<url-pattern>/DataPro</url-pattern>
+	</servlet-mapping>
+
+	<!-- Update Employee -->
+	<servlet>
+		<servlet-name>UpdateEmp</servlet-name>
+		<servlet-class>freshco.Control.UpdateEmp</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateEmp</servlet-name>
+		<url-pattern>/UpdateEmps</url-pattern>
+	</servlet-mapping>
+
+	<!-- Update Manager -->
+	<servlet>
+		<servlet-name>UpdateManager</servlet-name>
+		<servlet-class>freshco.Control.UpdateManager</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateManager</servlet-name>
+		<url-pattern>/EditProfileM</url-pattern>
+	</servlet-mapping>
+
+	<!-- Update DeliveryPerson -->
+	<servlet>
+		<servlet-name>UpdateDeliveryPerson</servlet-name>
+		<servlet-class>freshco.Control.UpdateDeliveryPerson</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateDeliveryPerson</servlet-name>
+		<url-pattern>/EditProfileDP</url-pattern>
+	</servlet-mapping>
+
+	<!-- Update Customer -->
+	<servlet>
+		<servlet-name>UpdateCustomer</servlet-name>
+		<servlet-class>freshco.Control.UpdateCustomer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateCustomer</servlet-name>
+		<url-pattern>/EditProfileC</url-pattern>
+	</servlet-mapping>
+
+	<!-- Update Product -->
+	<servlet>
+		<servlet-name>UpdateProduct</servlet-name>
+		<servlet-class>freshco.Control.UpdateProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateProduct</servlet-name>
+		<url-pattern>/EditProduct</url-pattern>
+	</servlet-mapping>
+
+	<!-- Update Enquiry-->
+	<servlet>
+		<servlet-name>UpdateEnquiry</servlet-name>
+		<servlet-class>freshco.Control.UpdateEnquiry</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateEnquiry</servlet-name>
+		<url-pattern>/ResUpdate</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Update DP in Sale -->
+	<servlet>
+		<servlet-name>UpdateDPSale</servlet-name>
+		<servlet-class>freshco.Control.UpdateDPSale</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateDPSale</servlet-name>
+		<url-pattern>/UDPS</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Update Status in Sale -->
+	<servlet>
+		<servlet-name>UpdateStatus</servlet-name>
+		<servlet-class>freshco.Control.UpdateStatus</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateStatus</servlet-name>
+		<url-pattern>/UPS</url-pattern>
+	</servlet-mapping>
+	<!-- Update Data Servlet Mappings End -->
+
+
+	<!-- Cart Servlet Mappings Start -->
+	<!-- Add Products to Cart -->
+	<servlet>
+		<servlet-name>AddCartProducts</servlet-name>
+		<servlet-class>freshco.Control.AddCartProducts</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCartProducts</servlet-name>
+		<url-pattern>/AddCart</url-pattern>
+	</servlet-mapping>
+
+	<!-- View Products in Cart -->
+	<servlet>
+		<servlet-name>ViewCartProducts</servlet-name>
+		<servlet-class>freshco.Control.ViewCartProducts</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewCartProducts</servlet-name>
+		<url-pattern>/ViewCart</url-pattern>
+	</servlet-mapping>
+
+	<!-- Remove Products from Cart -->
+	<servlet>
+		<servlet-name>RemoveCartProducts</servlet-name>
+		<servlet-class>freshco.Control.RemoveCartProducts</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveCartProducts</servlet-name>
+		<url-pattern>/RemoveCart</url-pattern>
+	</servlet-mapping>
+
+	<!-- Clear Products from Cart -->
+	<servlet>
+		<servlet-name>ClearCartProducts</servlet-name>
+		<servlet-class>freshco.Control.ClearCartProducts</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClearCartProducts</servlet-name>
+		<url-pattern>/ClearCart</url-pattern>
+	</servlet-mapping>
+	<!-- Cart Servlet Mappings End -->
+	<servlet>
+		<servlet-name>Checkout</servlet-name>
+		<servlet-class>freshco.Control.Checkout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Checkout</servlet-name>
+		<url-pattern>/Checkout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>OrderFacadeServlet</servlet-name>
+		<servlet-class>freshco.Control.OrderFacadeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OrderFacadeServlet</servlet-name>
+		<url-pattern>/OrderConfirm</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Receip</servlet-name>
+		<servlet-class>freshco.Control.Receip</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Receip</servlet-name>
+		<url-pattern>/Receipt</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

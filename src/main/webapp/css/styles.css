@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{  
+	    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+		font-family: 'Finger Paint', cursive;
+		}
+		
+#side-nav{
+	font-family: Archivo;
+    font-weight: 500;
+    height: auto;
+    width: 15%;
+    position: absolute;
+    background-color: #b3d3c8;
+    padding-top: 25px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+#side-nav a{
+    padding: 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #333;
+    display: block;
+}
+
+#side-nav a.active{
+    background-color: #f9f9f9;
+    color: #488f31;
+}
+
+#side-nav a:hover:not(.active){
+    background-color: #459a82;
+  color: #f9f9f9;
+}
+
+#main{
+	font-family: Archivo;
+    font-weight: 500;
+	   background-color: #f9f9f9;
+   margin-left:15.5%;
+  
+}
+
+   .material-symbols-outlined {
+            cursor: pointer;
+        }
